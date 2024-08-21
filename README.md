@@ -24,8 +24,7 @@ El proyecto no está desplegado.
 * Acceder a recursos a través de la red.
 
 # Tecnologías Utilizadas
-* Javascript
-* API Fetch
+[![Languages](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
 
 # Autores
 Este proyecto fue desarrollado por Andrés Rojas.
