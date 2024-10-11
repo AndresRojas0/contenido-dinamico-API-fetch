@@ -34,15 +34,20 @@ function cargarDatos(url) {
         });
 }
 
-async function cargarPagina(pagina, datosDinamicos) {
+async function cargarPagina(pagina, datosDinamicos){
     console.log('Entró a la función');
     let principal = document.querySelector('#contenido');
-    let datos = await fetch(pagina)
-        .then(respuesta => respuesta.text())
-        .catch('404 - Algo salió mal');
-    principal.innerHTML = datos;
-    if (datosDinamicos) {
-        cargarDatos(datosDinamicos);
+    try {
+        let datos = await fetch(pagina);
+        let contenido = await datos.text();
+        principal.innerHTML = contenido;
+        
+        if (datosDinamicos) {
+            cargarDatos(datosDinamicos);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        principal.innerHTML = "404 - Algo salió mal!";
     }
     console.log('Fin de la función');
 }
