@@ -10,3 +10,7 @@ header, main, footer {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+ul {
+    list-style-type: none;
+}
