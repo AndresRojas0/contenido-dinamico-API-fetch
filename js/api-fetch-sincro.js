@@ -35,7 +35,7 @@ function cargarDatos(url) {
                 cardContainer.appendChild(card);
             });
             
-            dinamico.innerHTML = ''; // Clear any existing content
+            dinamico.innerHTML = '';
             dinamico.appendChild(cardContainer);
         })
         .catch(error => {
@@ -52,7 +52,6 @@ async function cargarPagina(pagina, datosDinamicos){
         let contenido = await datos.text();
         principal.innerHTML = contenido;
         
-        // Cargar los datos externos
         if (datosDinamicos) {
             cargarDatos(datosDinamicos);
         }
