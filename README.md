@@ -18,7 +18,7 @@ Clona este repositorio en tu host.
 * Ejecuta un servidor web.
 
 # Despliegue
-El proyecto no está desplegado.
+El proyecto se encuentra desplegado en https://contenido-dinamico-api-fetch.netlify.app/
 
 # Funcionalidades
 * Acceder a recursos a través de la red.
